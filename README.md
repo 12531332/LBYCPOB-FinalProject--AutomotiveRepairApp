@@ -27,13 +27,18 @@ CORE OOP CONCEPTS:
 -Abstraction: An abstract RepairPart or Repairable class defines what every part needs (getInstructions(), getTools()) without exposing how each part's repair steps are implemented internally.
 
 INITIAL CLASS IDEAS:
-User: Handles login credentials and identifies the account as mechanic or supervisor.
-Mechanic: Logs damage, updates repair progress, views repair instructions.
-Supervisor: Views dashboard summaries and repair history across all vehicles.
-Vehicle: Stores owner name, plate number, type, brand, model, and date received.
-RepairLog: Records damaged part, repair status, notes, and who logged it.
-RepairInstruction: Holds step-by-step instructions, required tools, safety reminders, and estimated time for a given part.
-ProgressUpdate: Tracks status changes (Not Started, In Progress, Waiting for Parts, Completed) with mechanic name, date, and time.
+Model Classes
+Person: An abstract or base class representing any individual interacting with or managed by the system.
+User: Represents a registered system account capable of logging into the desktop application.
+Mechanic: A specialized class (likely inheriting from Person or linked to a User profile) representing the shop technicians responsible for performing maintenance operations and fulfilling repair instructions.
+Vehicle: The base class for all items brought into the shop for servicing. It defines core attributes and methods shared by all motorized transport types.
+Motorcycle: A specific subclass of Vehicle representing two- or three-wheeled motor vehicles, capturing unique traits such as engine displacement type or chain maintenance needs.
+Sedan: A specific subclass of Vehicle representing standard four-door passenger cars.
+SUV: A specific subclass of Vehicle representing Sport Utility Vehicles, potentially adding attributes for four-wheel-drive characteristics or larger cargo/passenger capacities.
+Pickup: A specific subclass of Vehicle representing light-duty trucks equipped with an open cargo bed, tracking specific details like bed length or towing capacity.
+Van: A specific subclass of Vehicle representing multi-purpose passenger or commercial transport vans.
+Repair: Represents an overarching service job or ticket for a specific vehicle brought into the shop.
+RepairInstruction: Represents a discrete task or step-by-step procedure required to complete a larger Repair job. This breaks down a major service into actionable items for mechanics.
 
 Service Classes
 LoginService: Validates user credentials and securely establishes the identity and access permissions of the logged-in mechanic.
