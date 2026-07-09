@@ -35,6 +35,23 @@ RepairLog: Records damaged part, repair status, notes, and who logged it.
 RepairInstruction: Holds step-by-step instructions, required tools, safety reminders, and estimated time for a given part.
 ProgressUpdate: Tracks status changes (Not Started, In Progress, Waiting for Parts, Completed) with mechanic name, date, and time.
 
+Service Classes
+LoginService: Validates user credentials and securely establishes the identity and access permissions of the logged-in mechanic.
+VehicleService: Coordinates the business rules for managing vehicles, ensuring proper formatting, ownership assignment, and fleet integrity.
+RepairService: Manages the life cycle and scheduling workflows of repair tasks, tracking urgency weights, mechanic assignments, and completion progress.
+InstructionService: Handles the logic for retrieving, updating, and associating specific standard operating procedures (SOPs) with automotive parts.
+
+Repository Classes
+The repository layer acts as an abstraction over your data storage, handling all direct data access, retrieval, and persistence operations.
+UserRepository: Handles direct read and write operations for user profile records within the underlying persistent storage.
+VehicleRepository: Manages the low-level data storage, querying, and deletion operations for registered vehicle assets.
+RepairRepository: Responsible for saving, loading, and updating active or completed repair logs directly to and from the data source.
+
+Util Classes
+Utilities are independent, reusable helper functions that provide common technical capabilities across the entire application.
+JsonUtil: Provides global helper methods to serialize Java objects into JSON strings and parse JSON strings back into structured data.
+ValidationUtil: Offers centralized checks to ensure inputs (like email formats, phone numbers, or vehicle plate syntax) conform to required patterns before processing.
+
 CORE FEATURES (Recommended):
 -Vehicle registration and search by plate number or owner name
 -Damage logging by part with status classification (Needs Repair, Urgent, Minor)
