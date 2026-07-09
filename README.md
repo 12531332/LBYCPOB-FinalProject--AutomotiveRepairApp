@@ -15,11 +15,9 @@ PROBLEM STATEMENT & GOALS:
 Auto repair shops often track vehicle intake, damage reports, and repair progress manually using paper logs or scattered notes. This makes it hard to monitor which vehicles are pending, in progress, or completed, and repair history gets lost or is hard to reference later. The system aims to centralize vehicle repair records in one place, let mechanics log damage and update progress digitally, and give supervisors a clear view of shop status at any time.
 
 TARGET USER:
-<Who will use this system?>
 Mechanics and supervisors working in an auto repair shop.
 
 BRIEF DESCRIPTION:
-<Summary of purpose and basic functionality>
 AutoTrack is a system that manages the full repair workflow of a vehicle from intake to completion. Users log in as either a mechanic or supervisor, register vehicles, log damage found during inspection, view repair instructions for specific parts, and update repair progress. Supervisors and mechanics can also check repair history and pending repairs through a shared dashboard.
 
 CORE OOP CONCEPTS:
@@ -36,12 +34,6 @@ Vehicle: Stores owner name, plate number, type, brand, model, and date received.
 RepairLog: Records damaged part, repair status, notes, and who logged it.
 RepairInstruction: Holds step-by-step instructions, required tools, safety reminders, and estimated time for a given part.
 ProgressUpdate: Tracks status changes (Not Started, In Progress, Waiting for Parts, Completed) with mechanic name, date, and time.
-
-USER STORIES (Recommended):
--As a mechanic, I want to log damage found during inspection so that the repair status is recorded accurately.
--As a mechanic, I want to view repair instructions for a selected part so that I can complete the repair safely and correctly.
--As a supervisor, I want to see a dashboard summary of pending, in-progress, and completed repairs so that I can monitor the shop's overall status.
--As a user, I want to log in with my own credentials so that only authorized personnel can access repair records.
 
 CORE FEATURES (Recommended):
 -Vehicle registration and search by plate number or owner name
