@@ -59,47 +59,43 @@ AutomotiveRepairSystem/
 └── src
     └── main
         ├── java
-        │   └── com.autoworks
-        │       ├── App.java
-        │       │
-        │       ├── model
-        │       │     Person.java
-        │       │     Mechanic.java
-        │       │     User.java
-        │       │
-        │       │     Vehicle.java
-        │       │     Sedan.java
-        │       │     SUV.java
-        │       │     Van.java
-        │       │     Pickup.java
-        │       │     Motorcycle.java
-        │       │
-        │       │     Repair.java
-        │       │     RepairInstruction.java
-        │       │
-        │       ├── service
-        │       │     LoginService.java
-        │       │     VehicleService.java
-        │       │     RepairService.java
-        │       │     InstructionService.java
-        │       │
-        │       ├── repository
-        │       │     UserRepository.java
-        │       │     VehicleRepository.java
-        │       │     RepairRepository.java
-        │       │
-        │       ├── ui
-        │       │     LoginFrame.java
-        │       │     DashboardFrame.java
-        │       │     VehicleFrame.java
-        │       │     RepairFrame.java
-        │       │
-        │       └── util
-        │             JsonUtil.java
-        │             ValidationUtil.java
+        │   └── com
+        │       └── autoworks
+        │           ├── App.java
+        │           ├── model
+        │           │   ├── Person.java
+        │           │   ├── User.java
+        │           │   ├── Mechanic.java
+        │           │   ├── Vehicle.java
+        │           │   ├── Sedan.java
+        │           │   ├── SUV.java
+        │           │   ├── Van.java
+        │           │   ├── Pickup.java
+        │           │   ├── Motorcycle.java
+        │           │   ├── Repair.java
+        │           │   └── RepairInstruction.java
+        │           ├── service
+        │           │   ├── LoginService.java
+        │           │   ├── VehicleService.java
+        │           │   ├── RepairService.java
+        │           │   └── InstructionService.java
+        │           ├── repository
+        │           │   ├── UserRepository.java
+        │           │   ├── VehicleRepository.java
+        │           │   └── RepairRepository.java
+        │           ├── ui
+        │           │   ├── LoginFrame.java
+        │           │   ├── DashboardFrame.java
+        │           │   ├── VehicleFrame.java
+        │           │   ├── RepairFrame.java
+        │           │   └── InstructionFrame.java
+        │           └── util
+        │               ├── JsonUtil.java
+        │               └── ValidationUtil.java
         │
         └── resources
-              users.json
-              vehicles.json
-              repairs.json
-              instructions.json
+            ├── styles.css
+            ├── users.json
+            ├── vehicles.json
+            ├── repairs.json
+            └── instructions.json
