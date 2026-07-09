@@ -1,4 +1,4 @@
-package org.example;
+package com.autoworks;
 
 /**
  * Hello world!
